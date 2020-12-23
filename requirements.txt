@@ -1,0 +1,4 @@
+hiplot
+sbibm==1.0.2
+supervisor
+streamlit
