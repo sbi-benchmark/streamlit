@@ -1,5 +1,6 @@
 import numpy as np
 import streamlit as st
+import pandas as pd
 import torch
 from deneb.utils import hex2rgb
 
@@ -140,7 +141,7 @@ def page_posteriors(df_path, basepath_samples):
 
         keywords["samples_tensor"] = torch.from_numpy(
             np.atleast_2d(
-                read_csv_cached(basepath_samples + folder + "posterior_samples.csv.bz2")
+                pd.read_csv(basepath_samples + folder + "posterior_samples.csv.bz2")
             ).astype(np.float32)
         )
         keywords["samples_name"] = df.iloc[run - 1]["algorithm"]
