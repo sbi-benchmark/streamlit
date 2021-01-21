@@ -1,4 +1,4 @@
 hiplot
-sbibm==1.0.2
+sbibm==1.0.4
 supervisor
 streamlit
