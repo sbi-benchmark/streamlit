@@ -173,7 +173,7 @@ def page_posteriors(df_path, basepath_samples):
             ]
         ).reset_index(drop=True)
 
-        with st.beta_expander(label="See metrics", expanded=False):
+        with st.expander(label="See metrics", expanded=False):
             st.table(df)
 
     if len(df) > 1:
