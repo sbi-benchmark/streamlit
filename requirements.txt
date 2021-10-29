@@ -1,4 +1,5 @@
 hiplot
+jsonschema>=3.0,<4.0
 sbibm==1.0.4
 supervisor
 streamlit
