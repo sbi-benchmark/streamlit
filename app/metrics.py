@@ -51,7 +51,7 @@ def page_metrics(df_path):
         if task_selected == "gaussian_mixture":
             st.markdown("")
             st.warning("""**Please note that `sbibm v1.1.0` contains [a bug fix for the Gaussian Mixture task](https://github.com/sbi-benchmark/sbibm/releases/tag/v1.1.0).**
-\nWe will issue an update of the results below.""")
+\n[Results from rerunning the task](https://github.com/sbi-benchmark/results/tree/main/gaussian_mixture_rerun).""")
             st.markdown("")
 
         chart = fig_metric(
